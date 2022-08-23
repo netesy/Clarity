@@ -1,12 +1,13 @@
 name: clarity
 description: Odoo JSON RPC Connector library for Flutter allows you to connect with Odoo 12+. Authenticate, Read data, updating and creating data, JSON type controllers, custom model methods
 version: 0.0.1
-homepage: http://www.github.com/netesy/clarity
+homepage: https://www.github.com/netesy/clarity
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  crypto: ^3.0.2
   flutter:
     sdk: flutter
   http: ^0.13.5

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:core';
 
+import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 
 import 'cookie.dart';
