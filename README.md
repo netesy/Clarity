@@ -1,6 +1,6 @@
-# FluentOdoo
+# Clarity
 
-A Odoo JSON-RPC Connector library for Flutter In an Eloquent.
+A Odoo JSON_RPC connector with clarity of intentions.
 
 This package contains set of method to call Odoo API with JSON-RPC using a Laravel Elequent Fluent Interface. You can call any odoo methods,
 controllers some of the information as below.
@@ -14,35 +14,58 @@ controllers some of the information as below.
 7. Search and read based on domain filters.
 8. CallKW method for calling any model level methods with arguments.
 9. Calling json controller with params.
-
+#  CODE
+```dart 
 clarity = Clarity('address', 'username', 'password', 'table_name');
-List Modules
-clarity.listModules().list();
-List Databases:
+```
+## List Modules
+```dart 
+clarity.listModules().list(); 
+```
+## List Databases:
+```dart 
 clarity.listDatabases().list();
-Select Table:
+```
+## Select Table:
+```dart 
 clarity.from('model_name').search('id').offset(0).limit(100).get();
-Select Fields:
+```
+## Select Fields:
+```dart 
 clarity.select(['name', 'country_id', 'comment']).from('res.partner').get();
-Read:
-clarity.from('model_name').read('id').offset(0).limit(100).get();
-Offset:
+```
+## Read:
+```dart 
+## clarity.from('model_name').read('id').offset(0).limit(100).get();
+```
+## Offset:
+```dart 
 clarity.from('model_name').search('id').offset(0).limit(100).get();
-Limit:
+```
+## Limit:
+```dart 
 clarity.from('model_name').read('id').offset(0).limit(100).get();
-Search:
+```
+## Search:
 clarity.from('model_name').search([]).get();
-Count:
+```
+## Count:
 clarity.from('model_name').count([]).get();
-Delete:
+```
+## Delete:
 clarity.from('model_name').delete('id').get();
-Create:
+```
+## Create:
 clarity.from('model_name').create([]).get();
-Update:
+```
+## Update:
 clarity.from('model_name').insert([]).get();
-<!-- clarity.where('conditions').get()
-clarity.save('')
-clarity.update() -->
+### Todo
+```
+
+clarity.where('conditions').get();
+clarity.save('');
+clarity.update();
 
 
 Documentation:

@@ -1,3 +1,3 @@
-## [0.0.1] - Dependency Version Upgrade
+## [0.0.1]
 
 - Wrote the basic fluent interface to Odoo
