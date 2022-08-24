@@ -62,27 +62,33 @@ clarity.from('model_name').search('id').offset(0).limit(100).get();
 ```dart
 clarity.from('model_name').read('id').offset(0).limit(100).get();
 ```
+
 ### Search
+
 ```dart
 clarity.from('model_name').search([]).get();
 ```
-### Count:
+
+### Count
+
 ```dart
 clarity.from('model_name').count([]).get();
 ```
 
 ### Delete
+
 ```dart
 clarity.from('model_name').delete('id').get();
-
 ```
 
-### Create:
+### Create
+
 ```dart
 clarity.from('model_name').create([]).get();
 ```
 
 ### Update
+
 ```dart
 clarity.from('model_name').insert([]).get();
 ```
