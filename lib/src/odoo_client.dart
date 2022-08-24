@@ -140,13 +140,13 @@ class OdooClient {
   void _updateSessionIdFromCookies(http.Response response,
       {bool auth = false}) {
     // see https://github.com/dart-lang/http/issues/362
-    final look_for_comma_expression = RegExp(r'(?<=)(,)(?=[^;]+?=)');
+    final lookForCommaExpression = RegExp(r'(?<=)(,)(?=[^;]+?=)');
     var cookiesStr = response.headers['set-cookie'];
     if (cookiesStr == null) {
       return;
     }
 
-    for (final cookieStr in cookiesStr.split(look_for_comma_expression)) {
+    for (final cookieStr in cookiesStr.split(lookForCommaExpression)) {
       try {
         final cookie = Cookie.fromSetCookieValue(cookieStr);
         if (cookie.name == 'session_id') {
